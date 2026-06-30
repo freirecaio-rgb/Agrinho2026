@@ -27,7 +27,7 @@ header h1{
 }
 
 nav{
-   background:#2e7d32;
+   background:var(--verde);
 }
 
 nav a{
