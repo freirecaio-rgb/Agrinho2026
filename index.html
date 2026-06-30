@@ -6,6 +6,12 @@
 <title>Agrinho - Agropecuária e Sustentabilidade</title>
 
 <style>
+    
+    :root{
+    --verde:#2e7d32;
+    --amarelo:#f9a825;
+}
+
 *{
     margin:0;
     padding:0;
@@ -19,7 +25,7 @@ body{
 }
 
 header{
-    background:linear-gradient(90deg,#2e7d32,#66bb6a);
+    background:linear-gradient(90deg,var(--verde),#66bb6a);
     color:white;
     text-align:center;
     padding:40px;
@@ -30,9 +36,7 @@ header h1{
 }
 
 nav{
-    background:#1b5e20;
-    display:flex;
-    justify-content:center;
+    background:var(--verde);
 }
 
 nav a{
@@ -94,7 +98,7 @@ section{
 }
 
 footer{
-    background:#1b5e20;
+    background:var(--amarelo);
     color:white;
     text-align:center;
     padding:20px;
@@ -104,7 +108,7 @@ footer{
 button{
     margin-top:20px;
     padding:12px 20px;
-    background:#2e7d32;
+    background:var(--verde);
     color:white;
     border:none;
     border-radius:5px;
@@ -113,6 +117,13 @@ button{
 
 button:hover{
     background:#1b5e20;
+}
+    a:focus{
+    outline:3px solid yellow;
+}
+
+button:focus{
+    outline:3px solid yellow;
 }
 </style>
 
@@ -182,10 +193,11 @@ desenvolvimento sustentável.
 <li>✅ Tecnologias agrícolas sustentáveis.</li>
 </ul>
 
-<button onclick="mensagem()">
+<button
+onclick="mensagem()"
+aria-label="Mostrar mensagem sobre sustentabilidade">
 Clique para uma mensagem
 </button>
-
 </section>
 
 <section id="curiosidades">
