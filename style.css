@@ -1,6 +1,4 @@
-<style>
-    
-    :root{
+  :root{
     --verde:#2e7d32;
     --amarelo:#f9a825;
 }
@@ -118,4 +116,3 @@ button:hover{
 button:focus{
     outline:3px solid yellow;
 }
-</style>
